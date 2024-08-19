@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.section {
+    padding: 50px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    gap: 6px;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+}
+
+.present-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.present-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start; 
+}
+
+.present-image {
+    min-width: 100px;
+    min-height: 100px;
+}
+
+.present-content, .present-image {
+    flex: 1;
+} 
+
+.features-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 50px 0;
+}
+
+.features-list {
+    display: flex;
+    gap: 10px;     
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    max-width: 150px;
+    text-align: center;
+}
+
+.image-container {
+    display: flex;
+    border: 4px dashed black;
+    width: 100px;
+    height: 100px;
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+}
+
+.quote-section {
+  display: flex;
+  justify-content: center;
+}
+
+.quote-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.quote-text {
+    display: flex;
+    flex-direction: column;
+    flex: wrap;
+    gap: 3px;
+    align-items: center;
+}
+
+.quote {
+    text-align: left;
+    width: 50%;
+}
+
+.quote-author {
+    width: 50%;
+    text-align: right;
+}
+
+.action-section{  
+    display: flex;
+    justify-content: center;
+}
+
+.action-container {
+    padding: 50px 70px;
+    display: flex;
+    gap: 20px
+}
+
+.action-content {
+    flex: 3;
+}
+
+.action-container button {
+    padding: 5px 20px;
+}
+
+footer {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
