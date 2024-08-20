@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,6 +12,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-family: "Roboto", serif;
 }
 
 .container {
@@ -17,7 +21,15 @@ body {
 }
 
 .section {
-    padding: 50px 0;
+    padding: 100px 0;
+}
+
+header, .present-section, .footer-section {
+    background-color: #1F2937;
+}
+
+header {
+    padding: 10px 0;
 }
 
 .header-container {
@@ -27,10 +39,17 @@ body {
     padding: 5px 0;
 }
 
+.header-logo {
+    font-size: 24px;
+    color: #F9FAF8;
+    font-weight: 800;
+}
+
 header ul {
     display: flex;
     list-style: none;
-    gap: 6px;
+    gap: 18px;
+    
 }
 
 header a{
@@ -38,56 +57,100 @@ header a{
     color: black;
 }
 
+.present-section {
+    padding: 200px 0;
+}
+
 .present-container {
     display: flex;
-    gap: 10px;
+    gap: 20px;
     align-items: center;
+    justify-content: center;
 }
 
 .present-content {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    align-items: flex-start; 
+    gap: 20px;
+    width: 50%;
+    text-align: left;
 }
+
+.present-title{
+    font-size: 48px;
+    font-weight: 800;
+    color: #F9FAF8;
+}
+
+header a, .present-desc{
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.present-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: auto;
+}
+
 
 .present-image {
-    min-width: 100px;
-    min-height: 100px;
+    width: 100%;
+    height: 100%;
 }
 
-.present-content, .present-image {
+
+.present-content, .present-img-container {
     flex: 1;
 } 
+
+.features-section {
+    padding: 200px 0;
+}
+
 
 .features-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    padding: 50px 0;
+    gap: 50px;
+}
+
+.features-title {
+    font-size: 36px;
+    font-weight: 800;
+    color:#1F2937;
 }
 
 .features-list {
     display: flex;
-    gap: 10px;     
+    gap: 70px;  
+    flex-wrap: wrap; 
+    justify-content: center;
 }
 
 .card {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 15px;
     align-items: center;
-    max-width: 150px;
+    max-width: 200px;
     text-align: center;
+    font-size: 18px;
+    color:#1F2937;
+    flex: 1;
 }
 
 .image-container {
     display: flex;
-    border: 4px dashed black;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
+    border: 4px solid lightgrey;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .card-image {
@@ -98,6 +161,8 @@ header a{
 .quote-section {
   display: flex;
   justify-content: center;
+  background-color: #e5e7eb;
+  padding: 150px 0;
 }
 
 .quote-container {
@@ -110,41 +175,77 @@ header a{
     display: flex;
     flex-direction: column;
     flex: wrap;
-    gap: 3px;
+    gap: 14px;
     align-items: center;
 }
 
 .quote {
     text-align: left;
-    width: 50%;
+    width: 60%;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 36px;
 }
 
 .quote-author {
-    width: 50%;
+    width: 60%;
     text-align: right;
+    font-weight: 600;
+    font-size: 28px;
 }
 
 .action-section{  
     display: flex;
     justify-content: center;
+    padding: 150px 0;
 }
 
 .action-container {
-    padding: 50px 70px;
+    padding: 70px 70px;
     display: flex;
-    gap: 20px
+    gap: 150px;
+    border-radius: 8px;
+    align-items: center;
 }
 
 .action-content {
-    flex: 3;
+    flex: 1;
 }
 
-.action-container button {
+.action-title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.action-description {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+
+.action-container button, .present-button{
     padding: 5px 20px;
+    width: 120px;
+    height: 50px;
+    font-weight: 900;
+    border-radius: 6px;
+    border: none;
+    font-size: 20px;
 }
 
-footer {
-    padding: 20px;
+.action-container button{
+    border: 2px solid white;
+    align-self: center;    
+}
+
+.action-container, .present-button, .action-container button{
+    background-color: #3882f6;
+    color: white;
+} 
+
+.footer-section {
+    padding: 15px;
     display: flex;
     justify-content: center;
+    color: #F9FAF8;
 }
